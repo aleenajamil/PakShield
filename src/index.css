@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-pakshield-green: #00FF9D;
+  --color-pakshield-bg: #0A0A0A;
+  --color-pakshield-card: #141414;
+  --color-pakshield-border: #1F1F1F;
+}
+
+@layer base {
+  body {
+    @apply bg-pakshield-bg text-white font-sans antialiased selection:bg-pakshield-green selection:text-black;
+  }
+}
